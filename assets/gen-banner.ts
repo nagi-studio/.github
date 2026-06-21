@@ -1,13 +1,14 @@
 // Render the NAGI STUDIO org banner — structured house style (dark + acid `#c8f031`,
 // faint blueprint grid + scanlines, Space Grotesk + JetBrains Mono). Left column:
 // brand lockup / wordmark / tagline / a shelf of the five project logos. Right: the
-// transparent Anon (爱音) cutout cropped into a framing circle (an orbit ring traces
-// the crop), with glowing nodes, a soft disc backdrop and a floor glow. Crisp
-// HTML/CSS via puppeteer, not AI art. Needs puppeteer-core + system Chrome (same
-// recipe as nagi-bench-site/scripts/og.ts).
+// studio mascot cropped into a framing circle (an orbit ring traces the crop), with
+// glowing nodes, a soft disc backdrop and a floor glow. Crisp HTML/CSS via puppeteer,
+// not AI lettering. Needs puppeteer-core + system Chrome (same recipe as
+// nagi-bench-site/scripts/og.ts).
 //   bun assets/gen-banner.ts   → profile/assets/banner.png (2560x1440 @2x)
-// Anon cutout = assets/anon.png, keyed from ai-jiahao-test's Live2D film page; see
-// that repo's COVER-HANDOFF.md to regenerate or swap the pose. Shelf icons are the
+// Mascot (assets/mascot.png) is an ORIGINAL character (pink hair, grey eyes) generated
+// with image2-gen-cli in edit mode for pose/style continuity, rendered on a flat blue
+// chroma screen (assets/mascot-src.png) and keyed to transparent. Shelf icons are the
 // same files used in profile/README.md (profile/assets/logos/*.png).
 import puppeteer from 'puppeteer-core'
 import { readFileSync } from 'node:fs'
@@ -16,7 +17,7 @@ import { fileURLToPath } from 'node:url'
 const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 const here = fileURLToPath(new URL('.', import.meta.url))
 const b64 = (p: string) => readFileSync(p).toString('base64')
-const anon = b64(`${here}anon.png`)
+const mascot = b64(`${here}mascot.png`)
 const out = `${here}../profile/assets/banner.png`
 const L = `${here}../profile/assets/logos`
 const logos = [
@@ -30,9 +31,8 @@ const logos = [
 const W = 1280
 const H = 720
 const N_SVG = `<svg viewBox="0 0 64 64"><path d="M16 48V16h7l18 22V16h7v32h-7L23 26v22h-7z" fill="#0a0a0e"/></svg>`
-// Anon is a half-body cutout (ends at the skirt). Crop her into the framing circle:
-// keep the head, let the circle's lower arc take the skirt — a natural portrait cut
-// instead of a straight hard edge. (element-local coords; box = right:80 bottom:0.)
+// The mascot is a half-body portrait. Crop her into the framing circle: keep the head,
+// let the circle's lower arc take the lower edge — a natural portrait cut, no hard line.
 const MASK = 'radial-gradient(circle 320px at 238px 272px,#000 0,#000 84%,transparent 99%)'
 
 const html = `<!doctype html><html><head><meta charset="utf8">
@@ -45,7 +45,7 @@ body{background:#0a0a0e;color:#ecece4;font-family:'Space Grotesk','PingFang SC',
 .glow{position:absolute;width:720px;height:720px;left:-240px;top:-280px;background:radial-gradient(circle,#c8f03116 0%,transparent 60%)}
 .scan{position:absolute;inset:0;z-index:6;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(0,0,0,.16) 3px 4px);opacity:.32;pointer-events:none}
 
-/* right stage: framing circle = where Anon is cropped */
+/* right stage: framing circle = where the mascot is cropped */
 .disc{position:absolute;z-index:1;left:632px;top:-38px;width:636px;height:636px;border-radius:50%;background:radial-gradient(circle at 50% 42%,#c8f0311c 0%,#5cc6e810 46%,transparent 70%)}
 .ring{position:absolute;z-index:3;left:630px;top:-40px;width:640px;height:640px;border:1.5px solid rgba(200,240,49,.26);border-radius:50%}
 .ring2{position:absolute;z-index:1;left:566px;top:-104px;width:768px;height:768px;border:1px solid rgba(236,236,228,.055);border-radius:50%}
@@ -55,7 +55,7 @@ body{background:#0a0a0e;color:#ecece4;font-family:'Space Grotesk','PingFang SC',
 .d2{left:1142px;top:150px;width:7px;height:7px;box-shadow:0 0 12px 2px #c8f03166}
 .d3{left:712px;top:470px;width:8px;height:8px;background:#5cc6e8;box-shadow:0 0 14px 2px #5cc6e877}
 .tick{position:absolute;z-index:1;left:600px;top:300px;width:34px;height:1px;background:rgba(200,240,49,.4)}
-.anon{position:absolute;z-index:2;right:80px;bottom:0;height:712px;filter:drop-shadow(0 14px 38px #c8f03126) drop-shadow(0 6px 18px rgba(0,0,0,.45));-webkit-mask-image:${MASK};mask-image:${MASK}}
+.mascot{position:absolute;z-index:2;right:80px;bottom:0;height:712px;filter:drop-shadow(0 14px 38px #c8f03126) drop-shadow(0 6px 18px rgba(0,0,0,.45));-webkit-mask-image:${MASK};mask-image:${MASK}}
 
 /* left content */
 .lockup{position:absolute;z-index:4;left:76px;top:62px;display:flex;align-items:center;gap:12px;font-family:'JetBrains Mono';font-size:15px;letter-spacing:.30em;color:#9a9aa2;text-transform:uppercase}
@@ -79,7 +79,7 @@ body{background:#0a0a0e;color:#ecece4;font-family:'Space Grotesk','PingFang SC',
 </style></head><body>
 <div class="grid"></div><div class="glow"></div>
 <div class="ring2"></div><div class="disc"></div><div class="floor"></div>
-<img class="anon" src="data:image/png;base64,${anon}"/>
+<img class="mascot" src="data:image/png;base64,${mascot}"/>
 <div class="ring"></div>
 <div class="tick"></div><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div>
 

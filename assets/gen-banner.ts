@@ -1,13 +1,14 @@
 // Render the NAGI STUDIO org banner — structured house style (dark + acid `#c8f031`,
 // faint blueprint grid + scanlines, Space Grotesk + JetBrains Mono). Left column:
 // brand lockup / wordmark / tagline / a shelf of the five project logos. Right: the
-// transparent Anon (爱音) cutout standing in an orbit ring with glowing nodes, a soft
-// halo and a floor glow. Crisp HTML/CSS via puppeteer, not AI art. Needs
-// puppeteer-core + system Chrome (same recipe as nagi-bench-site/scripts/og.ts).
+// transparent Anon (爱音) cutout cropped into a framing circle (an orbit ring traces
+// the crop), with glowing nodes, a soft disc backdrop and a floor glow. Crisp
+// HTML/CSS via puppeteer, not AI art. Needs puppeteer-core + system Chrome (same
+// recipe as nagi-bench-site/scripts/og.ts).
 //   bun assets/gen-banner.ts   → profile/assets/banner.png (2560x1440 @2x)
 // Anon cutout = assets/anon.png, keyed from ai-jiahao-test's Live2D film page; see
-// that repo's COVER-HANDOFF.md to regenerate or swap the pose. The shelf icons are
-// the same files used in profile/README.md (profile/assets/logos/*.png).
+// that repo's COVER-HANDOFF.md to regenerate or swap the pose. Shelf icons are the
+// same files used in profile/README.md (profile/assets/logos/*.png).
 import puppeteer from 'puppeteer-core'
 import { readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
@@ -29,9 +30,10 @@ const logos = [
 const W = 1280
 const H = 720
 const N_SVG = `<svg viewBox="0 0 64 64"><path d="M16 48V16h7l18 22V16h7v32h-7L23 26v22h-7z" fill="#0a0a0e"/></svg>`
-// Anon is a half-body cutout (ends at the skirt); fade her lower edge into the dark
-// so she reads as emerging from shadow instead of being hard-cut at the hem.
-const FADE = 'linear-gradient(to bottom,#000 0,#000 64%,rgba(0,0,0,.55) 84%,transparent 99%)'
+// Anon is a half-body cutout (ends at the skirt). Crop her into the framing circle:
+// keep the head, let the circle's lower arc take the skirt — a natural portrait cut
+// instead of a straight hard edge. (element-local coords; box = right:80 bottom:0.)
+const MASK = 'radial-gradient(circle 320px at 238px 272px,#000 0,#000 84%,transparent 99%)'
 
 const html = `<!doctype html><html><head><meta charset="utf8">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -43,18 +45,17 @@ body{background:#0a0a0e;color:#ecece4;font-family:'Space Grotesk','PingFang SC',
 .glow{position:absolute;width:720px;height:720px;left:-240px;top:-280px;background:radial-gradient(circle,#c8f03116 0%,transparent 60%)}
 .scan{position:absolute;inset:0;z-index:6;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(0,0,0,.16) 3px 4px);opacity:.32;pointer-events:none}
 
-/* right stage */
-.ring{position:absolute;z-index:1;left:690px;top:96px;width:520px;height:520px;border:1px solid rgba(200,240,49,.18);border-radius:50%}
-.ring2{position:absolute;z-index:1;left:610px;top:16px;width:680px;height:680px;border:1px solid rgba(236,236,228,.06);border-radius:50%}
-.halo{position:absolute;z-index:1;left:700px;top:120px;width:500px;height:500px;background:radial-gradient(circle,#c8f03122 0%,#5cc6e812 44%,transparent 68%)}
-.floor{position:absolute;z-index:1;left:744px;top:600px;width:430px;height:150px;background:radial-gradient(ellipse at center,#c8f03126 0%,transparent 72%);filter:blur(7px)}
-.dot{position:absolute;z-index:2;border-radius:50%;background:#c8f031}
-.d1{left:756px;top:190px;width:11px;height:11px;box-shadow:0 0 18px 3px #c8f03188}
-.d2{left:948px;top:90px;width:7px;height:7px;box-shadow:0 0 12px 2px #c8f03166}
-.d3{left:770px;top:516px;width:8px;height:8px;background:#5cc6e8;box-shadow:0 0 14px 2px #5cc6e877}
-.tick{position:absolute;z-index:1;left:640px;top:354px;width:34px;height:1px;background:rgba(200,240,49,.4)}
-.anon{position:absolute;z-index:2;right:80px;bottom:0;height:712px;filter:drop-shadow(0 14px 40px #c8f0312a) drop-shadow(0 6px 20px rgba(0,0,0,.5));-webkit-mask-image:${FADE};mask-image:${FADE}}
-.basefade{position:absolute;z-index:3;left:560px;right:0;bottom:0;height:170px;background:linear-gradient(to top,#0a0a0e 8%,rgba(10,10,14,.65) 46%,transparent);pointer-events:none}
+/* right stage: framing circle = where Anon is cropped */
+.disc{position:absolute;z-index:1;left:632px;top:-38px;width:636px;height:636px;border-radius:50%;background:radial-gradient(circle at 50% 42%,#c8f0311c 0%,#5cc6e810 46%,transparent 70%)}
+.ring{position:absolute;z-index:3;left:630px;top:-40px;width:640px;height:640px;border:1.5px solid rgba(200,240,49,.26);border-radius:50%}
+.ring2{position:absolute;z-index:1;left:566px;top:-104px;width:768px;height:768px;border:1px solid rgba(236,236,228,.055);border-radius:50%}
+.floor{position:absolute;z-index:1;left:766px;top:548px;width:368px;height:120px;background:radial-gradient(ellipse at center,#c8f03124 0%,transparent 72%);filter:blur(7px)}
+.dot{position:absolute;z-index:3;border-radius:50%;background:#c8f031}
+.d1{left:694px;top:206px;width:11px;height:11px;box-shadow:0 0 18px 3px #c8f03188}
+.d2{left:1142px;top:150px;width:7px;height:7px;box-shadow:0 0 12px 2px #c8f03166}
+.d3{left:712px;top:470px;width:8px;height:8px;background:#5cc6e8;box-shadow:0 0 14px 2px #5cc6e877}
+.tick{position:absolute;z-index:1;left:600px;top:300px;width:34px;height:1px;background:rgba(200,240,49,.4)}
+.anon{position:absolute;z-index:2;right:80px;bottom:0;height:712px;filter:drop-shadow(0 14px 38px #c8f03126) drop-shadow(0 6px 18px rgba(0,0,0,.45));-webkit-mask-image:${MASK};mask-image:${MASK}}
 
 /* left content */
 .lockup{position:absolute;z-index:4;left:76px;top:62px;display:flex;align-items:center;gap:12px;font-family:'JetBrains Mono';font-size:15px;letter-spacing:.30em;color:#9a9aa2;text-transform:uppercase}
@@ -77,10 +78,10 @@ body{background:#0a0a0e;color:#ecece4;font-family:'Space Grotesk','PingFang SC',
 .vign{position:absolute;z-index:5;inset:0;box-shadow:inset 0 0 220px 60px rgba(0,0,0,.5);pointer-events:none}
 </style></head><body>
 <div class="grid"></div><div class="glow"></div>
-<div class="ring2"></div><div class="ring"></div><div class="halo"></div><div class="floor"></div>
-<div class="tick"></div><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div>
+<div class="ring2"></div><div class="disc"></div><div class="floor"></div>
 <img class="anon" src="data:image/png;base64,${anon}"/>
-<div class="basefade"></div>
+<div class="ring"></div>
+<div class="tick"></div><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div>
 
 <div class="lockup"><span class="n">${N_SVG}</span> NAGI STUDIO</div>
 <div class="bar"></div>

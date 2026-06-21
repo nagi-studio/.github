@@ -1,9 +1,9 @@
 # .github
 
-Org-level defaults for [**NAGI STUDIO**](https://github.com/nagi-studio).
+Org-level defaults for [**NAGI STUDIO**](https://github.com/nagi-studio) — where [Nagi-ovo](https://github.com/Nagi-ovo) builds for fun and runs the community.
 
-- [`profile/README.md`](./profile/README.md) renders as the organization's public profile at <https://github.com/nagi-studio>.
+- [`profile/README.md`](./profile/README.md) renders as the org's public profile at <https://github.com/nagi-studio>.
 - [`profile/assets/`](./profile/assets/) holds the profile banner and the per-project logos.
-- [`assets/banner.html`](./assets/banner.html) is the banner source (1280×540). Re-render it to `profile/assets/banner.png` with headless Chrome at `deviceScaleFactor: 2` — same recipe as `nagi-bench-site/scripts/og.ts`.
+- [`assets/gen-banner.ts`](./assets/gen-banner.ts) renders the banner (1280×680) to `profile/assets/banner.png` — house style (dark + acid `#c8f031`, blueprint grid, Space Grotesk + JetBrains Mono) with the transparent Anon (爱音) cutout in [`assets/anon.png`](./assets/anon.png). Needs `puppeteer-core` + system Chrome; same recipe as `nagi-bench-site/scripts/og.ts`. The cutout is keyed from `ai-jiahao-test`'s Live2D film page — see that repo's `COVER-HANDOFF.md` to regenerate or swap the pose.
 
-No emojis, anywhere (house rule). Brand: acid `#c8f031` on night `#0a0a0e`, Space Grotesk + JetBrains Mono.
+No emojis, anywhere (house rule). Anon is the community mascot.

@@ -5,14 +5,15 @@
 <br />
 <br />
 
-**[Nagi-ovo](https://github.com/Nagi-ovo) 凭兴趣开源、运营社群的地方 —— 想做就做的项目，加一个聊得来的社群。看板娘是爱音 (Anon)。**
+**[Nagi-ovo](https://github.com/Nagi-ovo) 凭兴趣开源、运营社群的地方 —— 想做就做的项目，加一个聊得来的社群。**
 
-Where [Nagi-ovo](https://github.com/Nagi-ovo) builds open source for the fun of it and runs the community. Mascot: Anon.
+Where [Nagi-ovo](https://github.com/Nagi-ovo) builds open source for the fun of it and runs the community.
 
 <br />
 
 <a href="https://discord.gg/TEUFxdMbGb"><img src="https://img.shields.io/badge/Discord-一起玩-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord" /></a>
-<a href="https://x.com/Nag1ovo"><img src="https://img.shields.io/badge/X-@Nag1ovo-0a0a0e?style=flat-square&logo=x&logoColor=white" alt="X" /></a>
+<a href="https://wpa.qq.com/msgrd?v=3&uin=1080949127&site=qq&menu=yes"><img src="https://img.shields.io/badge/1080949127-12B7F5?style=flat-square&logo=qq&logoColor=white" alt="QQ" /></a>
+<a href="https://x.com/Nag1ovo"><img src="https://img.shields.io/badge/@Nag1ovo-0a0a0e?style=flat-square&logo=x&logoColor=white" alt="X" /></a>
 <a href="https://www.xiaohongshu.com/user/profile/5d366136000000001101950a"><img src="https://img.shields.io/badge/小红书-@Nagi--ovo-FF2442?style=flat-square" alt="Xiaohongshu" /></a>
 <a href="https://space.bilibili.com/312249633"><img src="https://img.shields.io/badge/Bilibili-@卡普迪姆-FB7299?style=flat-square&logo=bilibili&logoColor=white" alt="Bilibili" /></a>
 
@@ -32,10 +33,10 @@ Where [Nagi-ovo](https://github.com/Nagi-ovo) builds open source for the fun of 
 </td>
 </tr>
 <tr>
-<td width="60" valign="middle" align="center"><a href="https://jiahao.nagi.fun"><img src="assets/logos/ai-jiahao.png" width="42" alt="AI 嘉豪" /></a></td>
+<td width="60" valign="middle" align="center"><a href="https://jiahao.nagi.fun"><img src="assets/logos/ai-jiahao.png" width="42" alt="AI 嘉豪测试" /></a></td>
 <td valign="middle">
-<a href="https://jiahao.nagi.fun"><b>AI 嘉豪</b></a> &nbsp; <a href="https://github.com/nagi-studio/ai-jiahao">repo</a> &nbsp; <a href="https://github.com/nagi-studio/ai-jiahao"><img src="https://img.shields.io/github/stars/nagi-studio/ai-jiahao?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
-开源题库 —— 让模型一起做题，看看谁真的会，看板娘爱音带你测 AI 浓度。<br />
+<a href="https://jiahao.nagi.fun"><b>AI 嘉豪测试</b></a> &nbsp;<sub>基础科普</sub>&nbsp; <a href="https://github.com/nagi-studio/ai-jiahao">repo</a> &nbsp; <a href="https://github.com/nagi-studio/ai-jiahao"><img src="https://img.shields.io/github/stars/nagi-studio/ai-jiahao?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
+基础科普向开源题库 —— 让模型一起做题，看看谁真的会。<br />
 <sub>An open question bank — put the models through the same exam and see who actually knows.</sub>
 </td>
 </tr>
@@ -75,5 +76,5 @@ Gemini &amp; AI Studio 全能增强插件：时间轴导航、文件夹管理、
 <br />
 
 <div align="center">
-<sub>Built by <a href="https://github.com/Nagi-ovo">Nagi-ovo</a> · 看板娘 爱音 Anon</sub>
+<sub>Built by <a href="https://github.com/Nagi-ovo">Nagi-ovo</a></sub>
 </div>

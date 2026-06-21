@@ -1,23 +1,33 @@
 // Render the NAGI STUDIO org banner — structured house style (dark + acid `#c8f031`,
-// faint blueprint grid, Space Grotesk + JetBrains Mono): left content column
-// (brand lockup / wordmark / tagline / project strip) and a right "character bay"
-// framing the transparent Anon (爱音) cutout under a soft spotlight. Crisp HTML/CSS
-// via puppeteer, not AI art. Needs puppeteer-core + system Chrome (same recipe as
-// nagi-bench-site/scripts/og.ts).
-//   bun assets/gen-banner.ts   → profile/assets/banner.png (2560x1280 @2x)
-// Anon cutout = assets/anon.png, keyed from ai-jiahao-test's Live2D film page;
-// see that repo's COVER-HANDOFF.md to regenerate or swap the pose.
+// faint blueprint grid + scanlines, Space Grotesk + JetBrains Mono). Left column:
+// brand lockup / wordmark / tagline / a shelf of the five project logos. Right: the
+// transparent Anon (爱音) cutout standing in an orbit ring with glowing nodes, a soft
+// halo and a floor glow. Crisp HTML/CSS via puppeteer, not AI art. Needs
+// puppeteer-core + system Chrome (same recipe as nagi-bench-site/scripts/og.ts).
+//   bun assets/gen-banner.ts   → profile/assets/banner.png (2560x1440 @2x)
+// Anon cutout = assets/anon.png, keyed from ai-jiahao-test's Live2D film page; see
+// that repo's COVER-HANDOFF.md to regenerate or swap the pose. The shelf icons are
+// the same files used in profile/README.md (profile/assets/logos/*.png).
 import puppeteer from 'puppeteer-core'
 import { readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 
 const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 const here = fileURLToPath(new URL('.', import.meta.url))
-const anon = readFileSync(`${here}anon.png`).toString('base64')
+const b64 = (p: string) => readFileSync(p).toString('base64')
+const anon = b64(`${here}anon.png`)
 const out = `${here}../profile/assets/banner.png`
+const L = `${here}../profile/assets/logos`
+const logos = [
+  { src: b64(`${L}/nagi-bench.png`), label: 'BENCH' },
+  { src: b64(`${L}/ai-jiahao.png`), label: '嘉豪测试' },
+  { src: b64(`${L}/voyager.png`), label: 'VOYAGER' },
+  { src: b64(`${L}/shiori.png`), label: 'SHIORI' },
+  { src: b64(`${L}/komorebi.png`), label: 'KOMOREBI' },
+]
 
 const W = 1280
-const H = 640
+const H = 720
 const N_SVG = `<svg viewBox="0 0 64 64"><path d="M16 48V16h7l18 22V16h7v32h-7L23 26v22h-7z" fill="#0a0a0e"/></svg>`
 
 const html = `<!doctype html><html><head><meta charset="utf8">
@@ -26,44 +36,58 @@ const html = `<!doctype html><html><head><meta charset="utf8">
 *{margin:0;box-sizing:border-box}
 html,body{width:${W}px;height:${H}px}
 body{background:#0a0a0e;color:#ecece4;font-family:'Space Grotesk','PingFang SC','Hiragino Sans GB',sans-serif;overflow:hidden;position:relative}
-.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(236,236,228,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(236,236,228,.03) 1px,transparent 1px);background-size:56px 56px}
-.glow{position:absolute;width:680px;height:680px;left:-220px;top:-260px;background:radial-gradient(circle,#c8f03116 0%,transparent 60%)}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(236,236,228,.032) 1px,transparent 1px),linear-gradient(90deg,rgba(236,236,228,.032) 1px,transparent 1px);background-size:56px 56px}
+.glow{position:absolute;width:720px;height:720px;left:-240px;top:-280px;background:radial-gradient(circle,#c8f03116 0%,transparent 60%)}
+.scan{position:absolute;inset:0;z-index:6;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(0,0,0,.16) 3px 4px);opacity:.32;pointer-events:none}
 
-/* left content column */
-.lockup{position:absolute;z-index:3;left:74px;top:60px;display:flex;align-items:center;gap:12px;font-family:'JetBrains Mono';font-size:15px;letter-spacing:.30em;color:#9a9aa2;text-transform:uppercase}
+/* right stage */
+.ring{position:absolute;z-index:1;left:690px;top:96px;width:520px;height:520px;border:1px solid rgba(200,240,49,.18);border-radius:50%}
+.ring2{position:absolute;z-index:1;left:610px;top:16px;width:680px;height:680px;border:1px solid rgba(236,236,228,.06);border-radius:50%}
+.halo{position:absolute;z-index:1;left:700px;top:120px;width:500px;height:500px;background:radial-gradient(circle,#c8f03122 0%,#5cc6e812 44%,transparent 68%)}
+.floor{position:absolute;z-index:1;left:744px;top:612px;width:420px;height:120px;background:radial-gradient(ellipse at center,#c8f03122 0%,transparent 70%);filter:blur(6px)}
+.dot{position:absolute;z-index:2;border-radius:50%;background:#c8f031}
+.d1{left:756px;top:190px;width:11px;height:11px;box-shadow:0 0 18px 3px #c8f03188}
+.d2{left:948px;top:90px;width:7px;height:7px;box-shadow:0 0 12px 2px #c8f03166}
+.d3{left:770px;top:516px;width:8px;height:8px;background:#5cc6e8;box-shadow:0 0 14px 2px #5cc6e877}
+.tick{position:absolute;z-index:1;left:640px;top:354px;width:34px;height:1px;background:rgba(200,240,49,.4)}
+.anon{position:absolute;z-index:2;right:80px;bottom:8px;height:704px;filter:drop-shadow(0 18px 50px #c8f03130) drop-shadow(0 8px 24px rgba(0,0,0,.55))}
+
+/* left content */
+.lockup{position:absolute;z-index:3;left:76px;top:62px;display:flex;align-items:center;gap:12px;font-family:'JetBrains Mono';font-size:15px;letter-spacing:.30em;color:#9a9aa2;text-transform:uppercase}
 .lockup .n{width:30px;height:30px;background:#c8f031;display:grid;place-items:center;box-shadow:0 0 22px #c8f03155}
 .lockup .n svg{width:70%;height:70%}
-.bar{position:absolute;z-index:3;left:76px;top:132px;width:66px;height:6px;background:#c8f031;box-shadow:0 0 20px #c8f03166}
-.title{position:absolute;z-index:3;left:72px;top:150px;font-weight:700;font-size:116px;line-height:.86;letter-spacing:-.02em;color:#ecece4}
-.tag{position:absolute;z-index:3;left:76px;top:402px;font-size:29px;font-weight:600;color:#ecece4;letter-spacing:.01em}
-.tagen{position:absolute;z-index:3;left:76px;top:446px;font-family:'JetBrains Mono';font-size:16px;letter-spacing:.02em;color:#7e7e88}
-.strip{position:absolute;z-index:3;left:76px;top:540px;width:648px;padding-top:18px;border-top:1px solid rgba(236,236,228,.14);display:flex;gap:20px;align-items:center;font-family:'JetBrains Mono';font-weight:500;font-size:15px;letter-spacing:.14em;color:#8a8a93;text-transform:uppercase}
-.strip .sep{color:#3f3f47}
-.strip b{color:#c8c8cf;font-weight:700}
+.bar{position:absolute;z-index:3;left:78px;top:152px;width:66px;height:6px;background:#c8f031;box-shadow:0 0 20px #c8f03166}
+.title{position:absolute;z-index:3;left:74px;top:170px;font-weight:700;font-size:116px;line-height:.86;letter-spacing:-.02em;color:#ecece4}
+.tag{position:absolute;z-index:3;left:78px;top:430px;font-size:30px;font-weight:600;color:#ecece4;letter-spacing:.01em}
+.tag .s{color:#c8f031}
+.tagen{position:absolute;z-index:3;left:78px;top:476px;font-family:'JetBrains Mono';font-size:16px;letter-spacing:.02em;color:#7e7e88}
 
-/* right character bay */
-.bay-glow{position:absolute;z-index:1;right:90px;top:70px;width:430px;height:430px;background:radial-gradient(circle,#c8f0311f 0%,#5cc6e810 42%,transparent 66%)}
-.brk{position:absolute;z-index:4;width:32px;height:32px;border-color:#c8f031}
-.brk.tl{left:772px;top:48px;border-top:2px solid;border-left:2px solid}
-.brk.br{left:1212px;top:562px;border-bottom:2px solid;border-right:2px solid}
-.cap{position:absolute;z-index:4;left:818px;top:50px;font-family:'JetBrains Mono';line-height:1.45}
-.cap .a{font-size:13px;font-weight:700;letter-spacing:.16em;color:#c8f031}
-.cap .b{font-size:11px;letter-spacing:.30em;color:#7e7e88}
-.anon{position:absolute;z-index:3;right:70px;bottom:-44px;height:706px;filter:drop-shadow(0 18px 50px #c8f03133) drop-shadow(0 8px 24px rgba(0,0,0,.55))}
-.vign{position:absolute;z-index:5;inset:0;box-shadow:inset 0 0 200px 50px rgba(0,0,0,.5);pointer-events:none}
+/* project shelf */
+.shelf{position:absolute;z-index:3;left:78px;bottom:52px;width:584px;padding-top:20px;border-top:1px solid rgba(236,236,228,.13)}
+.shelf .hd{position:absolute;top:-9px;left:0;background:#0a0a0e;padding-right:12px;font-family:'JetBrains Mono';font-size:11px;letter-spacing:.26em;color:#6f6f78;text-transform:uppercase}
+.row{display:flex;gap:30px;align-items:flex-start}
+.cell{display:flex;flex-direction:column;align-items:center;gap:9px;width:84px}
+.cell img{width:38px;height:38px;border-radius:9px;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+.cell span{font-family:'JetBrains Mono';font-weight:600;font-size:11px;letter-spacing:.08em;color:#9a9aa2;text-transform:uppercase;white-space:nowrap}
+
+.vign{position:absolute;z-index:5;inset:0;box-shadow:inset 0 0 220px 60px rgba(0,0,0,.5);pointer-events:none}
 </style></head><body>
 <div class="grid"></div><div class="glow"></div>
-<div class="bay-glow"></div>
+<div class="ring2"></div><div class="ring"></div><div class="halo"></div><div class="floor"></div>
+<div class="tick"></div><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div>
 <img class="anon" src="data:image/png;base64,${anon}"/>
-<div class="brk tl"></div><div class="brk br"></div>
-<div class="cap"><div class="a">看板娘 · 爱音</div><div class="b">ANON</div></div>
+
 <div class="lockup"><span class="n">${N_SVG}</span> NAGI STUDIO</div>
 <div class="bar"></div>
 <div class="title">NAGI<br>STUDIO</div>
-<div class="tag">兴趣驱动的开源项目与社群</div>
+<div class="tag">兴趣驱动的<span class="s">开源项目</span>与<span class="s">社群</span></div>
 <div class="tagen">Open-source projects and a community, built for the joy of it.</div>
-<div class="strip"><b>BENCH</b><span class="sep">/</span><b>嘉豪</b><span class="sep">/</span><b>VOYAGER</b><span class="sep">/</span><b>SHIORI</b><span class="sep">/</span><b>KOMOREBI</b></div>
-<div class="vign"></div>
+
+<div class="shelf"><span class="hd">Projects</span><div class="row">
+${logos.map((g) => `<div class="cell"><img src="data:image/png;base64,${g.src}"><span>${g.label}</span></div>`).join('')}
+</div></div>
+
+<div class="vign"></div><div class="scan"></div>
 </body></html>`
 
 const browser = await puppeteer.launch({ executablePath: CHROME, headless: true })

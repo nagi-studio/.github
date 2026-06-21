@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --ink: #0a0a0e;
+    --ink2: #111118;
+    --paper: #ecece4;
+    --dim: #84848e;
+    --acid: #c8f031;
+    --amber: #e8a33d;
+    --azure: #5cc6e8;
+    --line: rgb(236 236 228 / 0.12);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1280px;
+    height: 540px;
+    overflow: hidden;
+    background:
+      radial-gradient(560px circle at 930px 250px, rgb(200 240 49 / 0.18), transparent 68%),
+      radial-gradient(360px circle at 1050px 150px, rgb(92 198 232 / 0.13), transparent 72%),
+      linear-gradient(rgb(236 236 228 / 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(236 236 228 / 0.045) 1px, transparent 1px),
+      var(--ink);
+    background-size: auto, auto, 48px 48px, 48px 48px, auto;
+    color: var(--paper);
+    font-family: "Space Grotesk", "PingFang SC", sans-serif;
+    position: relative;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    inset: -120px -80px;
+    background:
+      linear-gradient(105deg, transparent 0 46%, rgb(200 240 49 / 0.07) 50%, transparent 66%),
+      radial-gradient(900px ellipse at 34% 44%, transparent 44%, rgb(10 10 14 / 0.7) 88%);
+    pointer-events: none;
+  }
+  .mono { font-family: "JetBrains Mono", monospace; }
+
+  .brand {
+    position: absolute;
+    top: 50px;
+    left: 76px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font: 700 15px/1 "JetBrains Mono", monospace;
+    letter-spacing: 0.26em;
+  }
+  .brand .sq {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background: var(--acid);
+    box-shadow: 0 0 26px rgb(200 240 49 / 0.55);
+  }
+  .brand .sq svg { position: absolute; inset: 0; }
+  .url {
+    position: absolute;
+    top: 53px;
+    right: 76px;
+    color: var(--dim);
+    font: 500 13px/1 "JetBrains Mono", monospace;
+    letter-spacing: 0.2em;
+  }
+
+  .kicker {
+    position: absolute;
+    left: 78px;
+    top: 138px;
+    color: var(--dim);
+    font: 500 12px/1 "JetBrains Mono", monospace;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+  }
+  .title {
+    position: absolute;
+    left: 74px;
+    top: 174px;
+    line-height: 0.88;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+  .title .solid { display: block; font-size: 112px; }
+  .title .outline {
+    display: block;
+    margin-top: 6px;
+    color: transparent;
+    font-size: 112px;
+    -webkit-text-stroke: 2px var(--paper);
+  }
+
+  .copy {
+    position: absolute;
+    left: 78px;
+    top: 408px;
+    width: 660px;
+    color: var(--dim);
+    font-size: 19px;
+    line-height: 1.55;
+  }
+  .copy b { color: var(--paper); font-weight: 500; }
+
+  .meta {
+    position: absolute;
+    left: 78px;
+    top: 488px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--dim);
+  }
+  .meta .dot { width: 7px; height: 7px; background: var(--acid); box-shadow: 0 0 14px rgb(200 240 49 / 0.6); }
+  .meta b { color: var(--paper); font-weight: 700; }
+  .meta .by { color: var(--acid); }
+
+  /* ---- right constellation ---- */
+  .field {
+    position: absolute;
+    right: 28px;
+    top: 64px;
+    width: 540px;
+    height: 410px;
+  }
+  .field-label {
+    position: absolute;
+    right: 8px;
+    top: 4px;
+    color: var(--dim);
+    font: 500 11px/1 "JetBrains Mono", monospace;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+  }
+  .droplet {
+    position: absolute;
+    left: 96px;
+    top: 56px;
+    width: 326px;
+    height: 326px;
+    border: 1px solid rgb(236 236 228 / 0.18);
+    border-radius: 56% 44% 58% 42% / 52% 46% 54% 48%;
+    background:
+      radial-gradient(96px circle at 35% 27%, rgb(255 255 255 / 0.30), transparent 62%),
+      radial-gradient(240px circle at 62% 68%, rgb(200 240 49 / 0.20), transparent 70%),
+      linear-gradient(145deg, rgb(236 236 228 / 0.12), rgb(236 236 228 / 0.015) 48%, rgb(92 198 232 / 0.12));
+    box-shadow:
+      inset -22px -28px 54px rgb(10 10 14 / 0.68),
+      inset 18px 18px 38px rgb(255 255 255 / 0.08),
+      0 0 100px rgb(200 240 49 / 0.20),
+      0 0 200px rgb(92 198 232 / 0.10);
+    transform: rotate(-10deg);
+  }
+  .droplet::after {
+    content: "";
+    position: absolute;
+    inset: 26px;
+    border: 1px solid rgb(236 236 228 / 0.07);
+    border-radius: inherit;
+  }
+  .focus {
+    position: absolute;
+    left: 150px;
+    top: 118px;
+    width: 196px;
+    height: 196px;
+    filter: drop-shadow(0 0 18px rgb(200 240 49 / 0.4));
+  }
+  .focus span { position: absolute; width: 22px; height: 22px; }
+  .focus .tl { top: 0; left: 0; border-top: 2px solid var(--acid); border-left: 2px solid var(--acid); }
+  .focus .tr { top: 0; right: 0; border-top: 2px solid var(--acid); border-right: 2px solid var(--acid); }
+  .focus .bl { bottom: 0; left: 0; border-bottom: 2px solid var(--acid); border-left: 2px solid var(--acid); }
+  .focus .br { right: 0; bottom: 0; border-right: 2px solid var(--acid); border-bottom: 2px solid var(--acid); }
+
+  .ray {
+    position: absolute;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgb(236 236 228 / 0.22), transparent);
+    transform-origin: left center;
+  }
+  .r1 { left: 120px; top: 150px; width: 300px; transform: rotate(-18deg); }
+  .r2 { left: 100px; top: 214px; width: 330px; transform: rotate(9deg); }
+  .r3 { left: 150px; top: 286px; width: 250px; transform: rotate(28deg); }
+
+  .node {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgb(236 236 228 / 0.14);
+    background: rgb(17 17 24 / 0.56);
+    box-shadow: 0 18px 48px rgb(0 0 0 / 0.30), inset 0 1px 0 rgb(255 255 255 / 0.06);
+    backdrop-filter: blur(12px);
+  }
+  .node .nm {
+    position: absolute;
+    left: 50%;
+    bottom: -28px;
+    transform: translateX(-50%);
+    color: var(--paper);
+    font: 700 12px/1 "JetBrains Mono", monospace;
+    letter-spacing: 0.14em;
+    white-space: nowrap;
+  }
+  .node.bench {
+    left: 196px; top: 132px;
+    width: 124px; height: 124px;
+    border-color: rgb(200 240 49 / 0.42);
+    box-shadow:
+      0 0 34px rgb(200 240 49 / 0.22),
+      0 24px 70px rgb(0 0 0 / 0.36),
+      inset 0 1px 0 rgb(255 255 255 / 0.10);
+  }
+  .node.verse {
+    left: 64px; top: 70px;
+    width: 96px; height: 96px;
+    border-color: rgb(92 198 232 / 0.30);
+  }
+  .node.jiahao {
+    left: 350px; top: 250px;
+    width: 96px; height: 96px;
+    border-color: rgb(232 163 61 / 0.32);
+  }
+  .nmark { width: 56%; height: 56%; display: block; }
+
+  /* N favicon mark */
+  .nmark.nlogo { background: var(--acid); display: grid; place-items: center; width: 56px; height: 56px; }
+  .nmark.nlogo svg { width: 70%; height: 70%; }
+</style>
+</head>
+<body>
+  <div class="brand">
+    <span class="sq"><svg viewBox="0 0 64 64"><path d="M16 48V16h7l18 22V16h7v32h-7L23 26v22h-7z" fill="#0a0a0e"/></svg></span>
+    NAGI STUDIO
+  </div>
+  <div class="url">nagi.fun</div>
+  <div class="kicker">Open-source AI experiments</div>
+
+  <div class="title">
+    <span class="solid">NAGI</span>
+    <span class="outline">STUDIO</span>
+  </div>
+
+  <div class="copy">
+    开放的 AI 实验：评测、知识与工具，<b>一切摆在明面上</b>。<br />
+    Open AI experiments — evals, knowledge &amp; tools, in plain sight.
+  </div>
+
+  <div class="meta">
+    <span class="dot"></span>
+    <span><b>03</b>&nbsp;projects</span>
+    <span>·</span>
+    <span class="by">by Nagi-ovo</span>
+    <span>·</span>
+    <span>nagi.fun</span>
+  </div>
+
+  <div class="field" aria-hidden="true">
+    <div class="field-label">The studio</div>
+    <div class="droplet"></div>
+    <div class="ray r1"></div>
+    <div class="ray r2"></div>
+    <div class="ray r3"></div>
+    <div class="focus"><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></div>
+
+    <div class="node bench">
+      <span class="nmark nlogo"><svg viewBox="0 0 64 64"><path d="M16 48V16h7l18 22V16h7v32h-7L23 26v22h-7z" fill="#0a0a0e"/></svg></span>
+      <span class="nm">BENCH</span>
+    </div>
+
+    <div class="node verse">
+      <svg class="nmark" viewBox="0 0 48 48" fill="none" stroke="#5cc6e8" stroke-width="2.2">
+        <circle cx="24" cy="11" r="5"/>
+        <circle cx="11" cy="34" r="5"/>
+        <circle cx="37" cy="34" r="5"/>
+        <path d="M21 15.5 13.5 29.5M27 15.5 34.5 29.5M16 34h16"/>
+      </svg>
+      <span class="nm">VERSE</span>
+    </div>
+
+    <div class="node jiahao">
+      <svg class="nmark" viewBox="0 0 48 48" fill="none" stroke="#e8a33d" stroke-width="2.2">
+        <circle cx="24" cy="24" r="11.5"/>
+        <path d="M24 5v9M24 34v9M5 24h9M34 24h9"/>
+        <circle cx="24" cy="24" r="3" fill="#e8a33d" stroke="none"/>
+      </svg>
+      <span class="nm">嘉豪</span>
+    </div>
+  </div>
+</body>
+</html>

@@ -29,6 +29,9 @@ const logos = [
 const W = 1280
 const H = 720
 const N_SVG = `<svg viewBox="0 0 64 64"><path d="M16 48V16h7l18 22V16h7v32h-7L23 26v22h-7z" fill="#0a0a0e"/></svg>`
+// Anon is a half-body cutout (ends at the skirt); fade her lower edge into the dark
+// so she reads as emerging from shadow instead of being hard-cut at the hem.
+const FADE = 'linear-gradient(to bottom,#000 0,#000 64%,rgba(0,0,0,.55) 84%,transparent 99%)'
 
 const html = `<!doctype html><html><head><meta charset="utf8">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -44,26 +47,27 @@ body{background:#0a0a0e;color:#ecece4;font-family:'Space Grotesk','PingFang SC',
 .ring{position:absolute;z-index:1;left:690px;top:96px;width:520px;height:520px;border:1px solid rgba(200,240,49,.18);border-radius:50%}
 .ring2{position:absolute;z-index:1;left:610px;top:16px;width:680px;height:680px;border:1px solid rgba(236,236,228,.06);border-radius:50%}
 .halo{position:absolute;z-index:1;left:700px;top:120px;width:500px;height:500px;background:radial-gradient(circle,#c8f03122 0%,#5cc6e812 44%,transparent 68%)}
-.floor{position:absolute;z-index:1;left:744px;top:612px;width:420px;height:120px;background:radial-gradient(ellipse at center,#c8f03122 0%,transparent 70%);filter:blur(6px)}
+.floor{position:absolute;z-index:1;left:744px;top:600px;width:430px;height:150px;background:radial-gradient(ellipse at center,#c8f03126 0%,transparent 72%);filter:blur(7px)}
 .dot{position:absolute;z-index:2;border-radius:50%;background:#c8f031}
 .d1{left:756px;top:190px;width:11px;height:11px;box-shadow:0 0 18px 3px #c8f03188}
 .d2{left:948px;top:90px;width:7px;height:7px;box-shadow:0 0 12px 2px #c8f03166}
 .d3{left:770px;top:516px;width:8px;height:8px;background:#5cc6e8;box-shadow:0 0 14px 2px #5cc6e877}
 .tick{position:absolute;z-index:1;left:640px;top:354px;width:34px;height:1px;background:rgba(200,240,49,.4)}
-.anon{position:absolute;z-index:2;right:80px;bottom:8px;height:704px;filter:drop-shadow(0 18px 50px #c8f03130) drop-shadow(0 8px 24px rgba(0,0,0,.55))}
+.anon{position:absolute;z-index:2;right:80px;bottom:0;height:712px;filter:drop-shadow(0 14px 40px #c8f0312a) drop-shadow(0 6px 20px rgba(0,0,0,.5));-webkit-mask-image:${FADE};mask-image:${FADE}}
+.basefade{position:absolute;z-index:3;left:560px;right:0;bottom:0;height:170px;background:linear-gradient(to top,#0a0a0e 8%,rgba(10,10,14,.65) 46%,transparent);pointer-events:none}
 
 /* left content */
-.lockup{position:absolute;z-index:3;left:76px;top:62px;display:flex;align-items:center;gap:12px;font-family:'JetBrains Mono';font-size:15px;letter-spacing:.30em;color:#9a9aa2;text-transform:uppercase}
+.lockup{position:absolute;z-index:4;left:76px;top:62px;display:flex;align-items:center;gap:12px;font-family:'JetBrains Mono';font-size:15px;letter-spacing:.30em;color:#9a9aa2;text-transform:uppercase}
 .lockup .n{width:30px;height:30px;background:#c8f031;display:grid;place-items:center;box-shadow:0 0 22px #c8f03155}
 .lockup .n svg{width:70%;height:70%}
-.bar{position:absolute;z-index:3;left:78px;top:152px;width:66px;height:6px;background:#c8f031;box-shadow:0 0 20px #c8f03166}
-.title{position:absolute;z-index:3;left:74px;top:170px;font-weight:700;font-size:116px;line-height:.86;letter-spacing:-.02em;color:#ecece4}
-.tag{position:absolute;z-index:3;left:78px;top:430px;font-size:30px;font-weight:600;color:#ecece4;letter-spacing:.01em}
+.bar{position:absolute;z-index:4;left:78px;top:152px;width:66px;height:6px;background:#c8f031;box-shadow:0 0 20px #c8f03166}
+.title{position:absolute;z-index:4;left:74px;top:170px;font-weight:700;font-size:116px;line-height:.86;letter-spacing:-.02em;color:#ecece4}
+.tag{position:absolute;z-index:4;left:78px;top:430px;font-size:30px;font-weight:600;color:#ecece4;letter-spacing:.01em}
 .tag .s{color:#c8f031}
-.tagen{position:absolute;z-index:3;left:78px;top:476px;font-family:'JetBrains Mono';font-size:16px;letter-spacing:.02em;color:#7e7e88}
+.tagen{position:absolute;z-index:4;left:78px;top:476px;font-family:'JetBrains Mono';font-size:16px;letter-spacing:.02em;color:#7e7e88}
 
 /* project shelf */
-.shelf{position:absolute;z-index:3;left:78px;bottom:52px;width:584px;padding-top:20px;border-top:1px solid rgba(236,236,228,.13)}
+.shelf{position:absolute;z-index:4;left:78px;bottom:52px;width:584px;padding-top:20px;border-top:1px solid rgba(236,236,228,.13)}
 .shelf .hd{position:absolute;top:-9px;left:0;background:#0a0a0e;padding-right:12px;font-family:'JetBrains Mono';font-size:11px;letter-spacing:.26em;color:#6f6f78;text-transform:uppercase}
 .row{display:flex;gap:30px;align-items:flex-start}
 .cell{display:flex;flex-direction:column;align-items:center;gap:9px;width:84px}
@@ -76,6 +80,7 @@ body{background:#0a0a0e;color:#ecece4;font-family:'Space Grotesk','PingFang SC',
 <div class="ring2"></div><div class="ring"></div><div class="halo"></div><div class="floor"></div>
 <div class="tick"></div><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div>
 <img class="anon" src="data:image/png;base64,${anon}"/>
+<div class="basefade"></div>
 
 <div class="lockup"><span class="n">${N_SVG}</span> NAGI STUDIO</div>
 <div class="bar"></div>

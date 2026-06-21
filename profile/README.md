@@ -1,13 +1,13 @@
 <div align="center">
 
-<a href="https://nagi.fun"><img src="assets/banner.png" alt="NAGI STUDIO — 凭兴趣开源 · 运营社群" width="100%" /></a>
+<img src="assets/banner.png" alt="NAGI STUDIO — 兴趣驱动的开源项目与社群" width="100%" />
 
 <br />
 <br />
 
-**[Nagi-ovo](https://github.com/Nagi-ovo) 凭兴趣开源、和同好一起玩的地方 —— 想做就做的小项目，加一个社群据点。看板娘是爱音 (Anon)。**
+**[Nagi-ovo](https://github.com/Nagi-ovo) 凭兴趣开源、运营社群的地方 —— 想做就做的项目，加一个聊得来的社群。看板娘是爱音 (Anon)。**
 
-Where [Nagi-ovo](https://github.com/Nagi-ovo) builds for fun and hangs out with kindred spirits — whatever-I-feel-like projects plus a community to match. Mascot: Anon.
+Where [Nagi-ovo](https://github.com/Nagi-ovo) builds open source for the fun of it and runs the community. Mascot: Anon.
 
 <br />
 
@@ -15,7 +15,6 @@ Where [Nagi-ovo](https://github.com/Nagi-ovo) builds for fun and hangs out with 
 <a href="https://x.com/Nag1ovo"><img src="https://img.shields.io/badge/X-@Nag1ovo-0a0a0e?style=flat-square&logo=x&logoColor=white" alt="X" /></a>
 <a href="https://www.xiaohongshu.com/user/profile/5d366136000000001101950a"><img src="https://img.shields.io/badge/小红书-@Nagi--ovo-FF2442?style=flat-square" alt="Xiaohongshu" /></a>
 <a href="https://space.bilibili.com/312249633"><img src="https://img.shields.io/badge/Bilibili-@卡普迪姆-FB7299?style=flat-square&logo=bilibili&logoColor=white" alt="Bilibili" /></a>
-<a href="https://nagi.fun"><img src="https://img.shields.io/badge/Homepage-nagi.fun-c8f031?style=flat-square&labelColor=0a0a0e" alt="Homepage" /></a>
 
 </div>
 
@@ -76,5 +75,5 @@ Gemini &amp; AI Studio 全能增强插件：时间轴导航、文件夹管理、
 <br />
 
 <div align="center">
-<sub>Built by <a href="https://nagi.fun">Nagi-ovo</a> · 看板娘 爱音 Anon · <a href="https://nagi.fun">nagi.fun</a></sub>
+<sub>Built by <a href="https://github.com/Nagi-ovo">Nagi-ovo</a> · 看板娘 爱音 Anon</sub>
 </div>

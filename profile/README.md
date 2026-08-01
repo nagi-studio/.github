@@ -40,6 +40,22 @@ Where [Nagi-ovo](https://github.com/Nagi-ovo) builds open source for the fun of 
 <sub>An open question bank — put the models through the same exam and see who actually knows.</sub>
 </td>
 </tr>
+<tr>
+<td width="60" valign="middle" align="center"><a href="https://github.com/nagi-studio/YesPlayMusic"><img src="assets/logos/yesplaymusic.png" width="42" alt="YesPlayMusic" /></a></td>
+<td valign="middle">
+<a href="https://github.com/nagi-studio/YesPlayMusic"><b>YesPlayMusic</b></a> &nbsp;<sub>macOS</sub>&nbsp; <a href="https://github.com/nagi-studio/YesPlayMusic">repo</a> &nbsp; <a href="https://github.com/nagi-studio/YesPlayMusic"><img src="https://img.shields.io/github/stars/nagi-studio/YesPlayMusic?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
+网易云播放器的 macOS 定制分支 —— 缩成一条迷你播放器，歌词直接放进菜单栏。<br />
+<sub>A macOS-focused branch of the YesPlayMusic client — collapses into a mini player, puts lyrics in the menu bar.</sub>
+</td>
+</tr>
+<tr>
+<td width="60" valign="middle" align="center"><a href="https://github.com/nagi-studio/voyager-plugins"><img src="assets/logos/voyager.png" width="42" alt="Voyager Plugins" /></a></td>
+<td valign="middle">
+<a href="https://github.com/nagi-studio/voyager-plugins"><b>Voyager Plugins</b></a> &nbsp; <a href="https://github.com/nagi-studio/voyager-plugins">repo</a> &nbsp; <a href="https://github.com/nagi-studio/voyager-plugins"><img src="https://img.shields.io/github/stars/nagi-studio/voyager-plugins?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
+Voyager 的官方插件市场 —— 插件是纯数据，不下发代码，声明式改造 AI 聊天站点。<br />
+<sub>The official plugin marketplace for Voyager — plugins are pure data, no remote code, declaratively reshaping AI chat sites.</sub>
+</td>
+</tr>
 </table>
 
 <br />

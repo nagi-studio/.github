@@ -44,16 +44,16 @@ Where [Nagi-ovo](https://github.com/Nagi-ovo) builds open source for the fun of 
 <td width="60" valign="middle" align="center"><a href="https://github.com/nagi-studio/YesPlayMusic"><img src="assets/logos/yesplaymusic.png" width="42" alt="YesPlayMusic" /></a></td>
 <td valign="middle">
 <a href="https://github.com/nagi-studio/YesPlayMusic"><b>YesPlayMusic</b></a> &nbsp;<sub>macOS</sub>&nbsp; <a href="https://github.com/nagi-studio/YesPlayMusic">repo</a> &nbsp; <a href="https://github.com/nagi-studio/YesPlayMusic"><img src="https://img.shields.io/github/stars/nagi-studio/YesPlayMusic?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
-网易云播放器的 macOS 定制分支 —— 缩成一条迷你播放器，歌词直接放进菜单栏。<br />
-<sub>A macOS-focused branch of the YesPlayMusic client — collapses into a mini player, puts lyrics in the menu bar.</sub>
+<a href="https://github.com/qier222/YesPlayMusic">qier222/YesPlayMusic</a> 的 macOS 分支，播放器本体是原作者的作品，这边加了迷你播放器和菜单栏歌词。<br />
+<sub>A macOS branch of <a href="https://github.com/qier222/YesPlayMusic">qier222/YesPlayMusic</a>. The player itself is the original author's work; this branch adds a mini player and menu bar lyrics.</sub>
 </td>
 </tr>
 <tr>
-<td width="60" valign="middle" align="center"><a href="https://github.com/nagi-studio/voyager-plugins"><img src="assets/logos/voyager.png" width="42" alt="Voyager Plugins" /></a></td>
+<td width="60" valign="middle" align="center"><a href="https://github.com/nagi-studio/namonaki"><b>な</b></a></td>
 <td valign="middle">
-<a href="https://github.com/nagi-studio/voyager-plugins"><b>Voyager Plugins</b></a> &nbsp; <a href="https://github.com/nagi-studio/voyager-plugins">repo</a> &nbsp; <a href="https://github.com/nagi-studio/voyager-plugins"><img src="https://img.shields.io/github/stars/nagi-studio/voyager-plugins?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
-Voyager 的官方插件市场 —— 插件是纯数据，不下发代码，声明式改造 AI 聊天站点。<br />
-<sub>The official plugin marketplace for Voyager — plugins are pure data, no remote code, declaratively reshaping AI chat sites.</sub>
+<a href="https://github.com/nagi-studio/namonaki"><b>Namonaki</b></a> &nbsp;<sub>macOS</sub>&nbsp; <a href="https://github.com/nagi-studio/namonaki">repo</a> &nbsp; <a href="https://github.com/nagi-studio/namonaki"><img src="https://img.shields.io/github/stars/nagi-studio/namonaki?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
+B 站直播弹幕悬浮窗 —— 平时对鼠标隐形不挡操作，右键弹幕直接回复，能发弹幕和表情。<br />
+<sub>A Bilibili live chat overlay for macOS — click-through when idle, right-click a message to reply, send messages and stickers.</sub>
 </td>
 </tr>
 </table>

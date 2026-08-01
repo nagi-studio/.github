@@ -40,6 +40,13 @@ Where [Nagi-ovo](https://github.com/Nagi-ovo) builds open source for the fun of 
 <sub>An open question bank — put the models through the same exam and see who actually knows.</sub>
 </td>
 </tr>
+</table>
+
+<br />
+
+## 小项目 · Side Projects
+
+<table>
 <tr>
 <td width="60" valign="middle" align="center"><a href="https://github.com/nagi-studio/YesPlayMusic"><img src="assets/logos/yesplaymusic.png" width="42" alt="YesPlayMusic" /></a></td>
 <td valign="middle">

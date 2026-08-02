@@ -41,9 +41,9 @@ Where [Nagi-ovo](https://github.com/Nagi-ovo) builds open source for the fun of 
 </td>
 </tr>
 <tr>
-<td width="60" valign="middle" align="center"><a href="https://github.com/nagi-studio/Nagi-Skills"><img src="assets/logos/nagi-skills.png" width="42" alt="Nagi Skills" /></a></td>
+<td width="60" valign="middle" align="center"><a href="https://github.com/nagi-studio/skills"><img src="assets/logos/nagi-skills.png" width="42" alt="Nagi Skills" /></a></td>
 <td valign="middle">
-<a href="https://github.com/nagi-studio/Nagi-Skills"><b>Nagi Skills</b></a> &nbsp;<sub>Claude Code · Codex</sub>&nbsp; <a href="https://github.com/nagi-studio/Nagi-Skills">repo</a> &nbsp; <a href="https://github.com/nagi-studio/Nagi-Skills"><img src="https://img.shields.io/github/stars/nagi-studio/Nagi-Skills?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
+<a href="https://github.com/nagi-studio/skills"><b>NAGI SKILLS</b></a> &nbsp;<sub>Claude Code · Codex</sub>&nbsp; <a href="https://github.com/nagi-studio/skills">repo</a> &nbsp; <a href="https://github.com/nagi-studio/skills"><img src="https://img.shields.io/github/stars/nagi-studio/skills?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
 持续更新的 agent skill 合集，一条命令全装。两条线：论文精读讲证据纪律，输出风格让你只做验收。<br />
 <sub>A growing collection of agent skills — evidence-led paper reading, and an output style that leaves you just signing off.</sub>
 </td>

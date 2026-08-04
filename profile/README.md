@@ -67,10 +67,10 @@ Where [Nagi-ovo](https://github.com/Nagi-ovo) builds open source for the fun of 
 </td>
 </tr>
 <tr>
-<td width="60" valign="middle" align="center"><a href="https://github.com/nagi-studio/namonaki"><b>な</b></a></td>
+<td width="60" valign="middle" align="center"><a href="https://github.com/nagi-studio/namonaki"><img src="assets/logos/namonaki.png" width="42" alt="Namonaki" /></a></td>
 <td valign="middle">
 <a href="https://github.com/nagi-studio/namonaki"><b>Namonaki</b></a> &nbsp;<sub>macOS</sub>&nbsp; <a href="https://github.com/nagi-studio/namonaki"><img src="https://img.shields.io/github/stars/nagi-studio/namonaki?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
-B 站直播弹幕悬浮窗 —— 平时对鼠标隐形不挡操作，右键弹幕直接回复，能发弹幕和表情。<br />
+B 站直播弹幕悬浮窗 —— 开播时弹幕飘在桌面上，鼠标碰不到、不挡手上的活，右键一条直接回复，也能发弹幕和表情。<br />
 <sub>A Bilibili live chat overlay for macOS — click-through when idle, right-click a message to reply, send messages and stickers.</sub>
 </td>
 </tr>

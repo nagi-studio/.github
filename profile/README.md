@@ -12,12 +12,30 @@ Where [Nagi-ovo](https://github.com/Nagi-ovo) builds open source for the fun of 
 <br />
 
 <a href="https://discord.gg/TEUFxdMbGb"><img src="https://img.shields.io/badge/Discord-一起玩-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord" /></a>
-<a href="https://wpa.qq.com/msgrd?v=3&uin=1080949127&site=qq&menu=yes"><img src="https://img.shields.io/badge/1080949127-12B7F5?style=flat-square&logo=qq&logoColor=white" alt="QQ" /></a>
 <a href="https://x.com/Nag1ovo"><img src="https://img.shields.io/badge/@Nag1ovo-0a0a0e?style=flat-square&logo=x&logoColor=white" alt="X" /></a>
-<a href="https://www.xiaohongshu.com/user/profile/5d366136000000001101950a"><img src="https://img.shields.io/badge/小红书-@Nagi--ovo-FF2442?style=flat-square" alt="Xiaohongshu" /></a>
+<a href="https://www.xiaohongshu.com/user/profile/5d366136000000001101950a"><img src="https://img.shields.io/badge/小红书-@卡普迪姆-FF2442?style=flat-square" alt="Xiaohongshu" /></a>
 <a href="https://space.bilibili.com/312249633"><img src="https://img.shields.io/badge/Bilibili-@卡普迪姆-FB7299?style=flat-square&logo=bilibili&logoColor=white" alt="Bilibili" /></a>
 
 </div>
+
+<br />
+
+## 视频 · Videos
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://www.bilibili.com/video/BV1irHx6dEEf"><img src="assets/videos/grill.jpg" width="100%" alt="写代码之前，先让 AI 拷打你" /></a><br />
+<a href="https://www.bilibili.com/video/BV1irHx6dEEf"><b>写代码之前，先让 AI 拷打你</b></a><br />
+<sub>【Re:从零开始的AI学习】· 配套 skill：<a href="https://github.com/nagi-studio/skills/tree/main/skills/pondering/grill">grill</a></sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://www.bilibili.com/video/BV1Y8aL6SEit"><img src="assets/videos/github.jpg" width="100%" alt="你真的会用 GitHub 吗？" /></a><br />
+<a href="https://www.bilibili.com/video/BV1Y8aL6SEit"><b>你真的会用 GitHub 吗？</b></a><br />
+<sub>【Re:从零开始的AI学习】</sub>
+</td>
+</tr>
+</table>
 
 <br />
 
@@ -43,9 +61,9 @@ Where [Nagi-ovo](https://github.com/Nagi-ovo) builds open source for the fun of 
 <tr>
 <td width="60" valign="middle" align="center"><a href="https://github.com/nagi-studio/skills"><img src="assets/logos/nagi-skills.png" width="42" alt="Nagi Skills" /></a></td>
 <td valign="middle">
-<a href="https://github.com/nagi-studio/skills"><b>NAGI SKILLS</b></a> &nbsp;<sub>Claude Code · Codex</sub>&nbsp; <a href="https://github.com/nagi-studio/skills">repo</a> &nbsp; <a href="https://github.com/nagi-studio/skills"><img src="https://img.shields.io/github/stars/nagi-studio/skills?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
-持续更新的 agent skill 合集，一条命令全装。两条线：论文精读讲证据纪律，输出风格让你只做验收。<br />
-<sub>A growing collection of agent skills — evidence-led paper reading, and an output style that leaves you just signing off.</sub>
+<a href="https://github.com/nagi-studio/skills"><b>NAGI SKILLS</b></a> &nbsp;<sub>Claude Code · Codex · 任意 Harness</sub>&nbsp; <a href="https://github.com/nagi-studio/skills">repo</a> &nbsp; <a href="https://github.com/nagi-studio/skills"><img src="https://img.shields.io/github/stars/nagi-studio/skills?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
+跟着视频系列一起长大的 agent skill 合集，一条命令全装。第一个是 grill：动手之前，先让 AI 把你问清楚。<br />
+<sub>Agent skills that grow with the video series, one command to install. First up: grill — let the AI question you before it builds.</sub>
 </td>
 </tr>
 </table>
@@ -84,9 +102,9 @@ B 站直播弹幕悬浮窗 —— 开播时弹幕飘在桌面上，鼠标碰不�
 <tr>
 <td width="60" valign="middle" align="center"><a href="https://voyager.nagi.fun"><img src="assets/logos/voyager.png" width="42" alt="Voyager" /></a></td>
 <td valign="middle">
-<a href="https://voyager.nagi.fun"><b>Voyager</b></a> &nbsp; <a href="https://github.com/Nagi-ovo/gemini-voyager">repo</a> &nbsp; <a href="https://github.com/Nagi-ovo/gemini-voyager"><img src="https://img.shields.io/github/stars/Nagi-ovo/gemini-voyager?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
-Gemini &amp; AI Studio 全能增强插件：时间轴导航、文件夹管理、提示词库、对话导出。<br />
-<sub>An all-in-one enhancement suite for Google Gemini &amp; AI Studio — timeline, folders, prompt library, export.</sub>
+<a href="https://voyager.nagi.fun"><b>Voyager</b></a> &nbsp; <a href="https://github.com/voyager-crew/voyager">repo</a> &nbsp; <a href="https://github.com/voyager-crew/voyager"><img src="https://img.shields.io/github/stars/voyager-crew/voyager?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
+Gemini、AI Studio、Claude、ChatGPT 与 DeepSeek 的增强插件：时间轴导航、文件夹管理、对话导出，提示词库在任意网站都能用。<br />
+<sub>An enhancement suite for Gemini, AI Studio, Claude, ChatGPT &amp; DeepSeek — timeline, folders, export, and a prompt library that works on any site.</sub>
 </td>
 </tr>
 <tr>

@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.png" alt="NAGI STUDIO — 兴趣驱动的开源项目与社群" width="100%" />
+<img src="assets/banner.png" alt="卡普迪姆 Carpe Diem —【Re:从零开始的AI学习】" width="100%" />
 
 <br />
 <br />

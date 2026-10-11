@@ -24,12 +24,17 @@ Where [Nagi-ovo](https://github.com/Nagi-ovo) builds open source for the fun of 
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
+<a href="https://www.bilibili.com/video/BV1TtpL6SEvg"><img src="assets/videos/architect.jpg" width="100%" alt="别随便让 AI 替你选技术栈！" /></a><br />
+<a href="https://www.bilibili.com/video/BV1TtpL6SEvg"><b>别随便让 AI 替你选技术栈！</b></a><br />
+<sub>【Re:从零开始的AI学习】· 配套 skill：<a href="https://github.com/nagi-studio/skills/tree/main/skills/pondering/architect">architect</a></sub>
+</td>
+<td width="33%" valign="top">
 <a href="https://www.bilibili.com/video/BV1irHx6dEEf"><img src="assets/videos/grill.jpg" width="100%" alt="写代码之前，先让 AI 拷打你" /></a><br />
 <a href="https://www.bilibili.com/video/BV1irHx6dEEf"><b>写代码之前，先让 AI 拷打你</b></a><br />
 <sub>【Re:从零开始的AI学习】· 配套 skill：<a href="https://github.com/nagi-studio/skills/tree/main/skills/pondering/grill">grill</a></sub>
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 <a href="https://www.bilibili.com/video/BV1Y8aL6SEit"><img src="assets/videos/github.jpg" width="100%" alt="你真的会用 GitHub 吗？" /></a><br />
 <a href="https://www.bilibili.com/video/BV1Y8aL6SEit"><b>你真的会用 GitHub 吗？</b></a><br />
 <sub>【Re:从零开始的AI学习】</sub>

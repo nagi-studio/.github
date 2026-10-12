@@ -5,9 +5,9 @@
 <br />
 <br />
 
-**[Nagi-ovo](https://github.com/Nagi-ovo) 凭兴趣开源、运营社群的地方 —— 想做就做的项目，加一个聊得来的社群。**
+**[卡普迪姆](https://space.bilibili.com/312249633) 凭兴趣开源、运营社群的地方 —— 想做就做的项目，加一个聊得来的社群。**
 
-Where [Nagi-ovo](https://github.com/Nagi-ovo) builds open source for the fun of it and runs the community.
+Where [Carpe Diem](https://space.bilibili.com/312249633) builds open source for the fun of it and runs the community.
 
 <br />
 

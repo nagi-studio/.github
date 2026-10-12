@@ -84,9 +84,9 @@ Where [Carpe Diem](https://space.bilibili.com/312249633) builds open source for 
 <a href="https://tauri.app"><img src="assets/logos/tauri-glyph.svg" width="18" alt="Tauri 2" /></a>
 </td>
 <td valign="middle">
-<a href="https://github.com/nagi-studio/YesPlayMusic"><b>YesPlayMusic</b></a> &nbsp;<sub>macOS · Tauri 2</sub>&nbsp; <a href="https://github.com/nagi-studio/YesPlayMusic"><img src="https://img.shields.io/github/stars/nagi-studio/YesPlayMusic?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
-基于 <a href="https://github.com/qier222/YesPlayMusic">qier222/YesPlayMusic</a> 的 macOS Tauri 2 重构版。界面和主要功能来自原作，这边重做了桌面运行时，并加入迷你播放器和菜单栏歌词。<br />
-<sub>A macOS Tauri 2 rebuild based on <a href="https://github.com/qier222/YesPlayMusic">qier222/YesPlayMusic</a>. The interface and core features come from the original project; this fork rebuilds the desktop runtime and adds a mini player and menu bar lyrics.</sub>
+<a href="https://github.com/nagi-studio/YesPlayMusic"><b>YesPlayMusic</b></a> &nbsp;<sub>Tauri 2</sub>&nbsp; <a href="https://github.com/nagi-studio/YesPlayMusic"><img src="https://img.shields.io/github/stars/nagi-studio/YesPlayMusic?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
+基于 <a href="https://github.com/qier222/YesPlayMusic">qier222/YesPlayMusic</a> 的 Tauri 2 重构版。界面和主要功能来自原作，这边重做了桌面运行时，并加入迷你播放器和菜单栏歌词。<br />
+<sub>A Tauri 2 rebuild based on <a href="https://github.com/qier222/YesPlayMusic">qier222/YesPlayMusic</a>. The interface and core features come from the original project; this fork rebuilds the desktop runtime and adds a mini player and menu bar lyrics.</sub>
 </td>
 </tr>
 <tr>

@@ -24,6 +24,18 @@ Where [Carpe Diem](https://space.bilibili.com/312249633) builds open source for 
 
 <table>
 <tr>
+<td width="36%" valign="middle"><a href="https://www.bilibili.com/video/BV1VZWc6dECG"><img src="assets/weekly-395.jpg" width="100%" alt="入选 B 站每周必看第 395 期：【Re:从零开始的AI学习】第一季总集篇" /></a></td>
+<td valign="middle">
+<sub>入选 B 站「每周必看」第 395 期 · 2026.10.16</sub><br />
+<a href="https://www.bilibili.com/video/BV1VZWc6dECG"><b>【Re:从零开始的AI学习】第一季总集篇｜从入门到用好 AI</b></a><br />
+13 期、55 分钟，从零开始把 AI 用起来。90 万+ 播放。<br />
+<sub>Season 1 recap of the series, featured in Bilibili's Weekly Must-Watch #395 — 13 episodes in 55 minutes, 900k+ views.</sub>
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
 <td width="33%" valign="top">
 <a href="https://www.bilibili.com/video/BV1TtpL6SEvg"><img src="assets/videos/architect.jpg" width="100%" alt="别随便让 AI 替你选技术栈！" /></a><br />
 <a href="https://www.bilibili.com/video/BV1TtpL6SEvg"><b>别随便让 AI 替你选技术栈！</b></a><br />

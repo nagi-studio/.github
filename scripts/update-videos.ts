@@ -4,8 +4,10 @@
 //   bun scripts/update-videos.ts     (also runs daily in .github/workflows/update-videos.yml)
 // Views are rounded to 万 and the newest episodes show none, so the README only changes when an
 // episode comes out or the recap crosses another 万 — not on every run.
-// Bilibili sometimes rejects datacenter IPs. The series list is required (the script fails and
-// the README stays as it is); per-video details are optional and cached in profile/videos.json.
+// Companion skills come from nagi-studio/skills' README, where each skill links its episode.
+// Bilibili rejects datacenter IPs for per-video details, so the recap's best site rank is cached
+// in profile/videos.json; the series list itself works from CI and is required (on failure the
+// script exits and the README stays as it is).
 import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 
@@ -27,8 +29,7 @@ const headers = {
 }
 
 type Archive = { bvid: string; title: string; pic: string; pubdate: number; stat: { view: number } }
-/** Per-video details that need one extra request each; null skill = checked, the episode has none. */
-type Cache = { skills: Record<string, string | null>; hisRank?: number }
+type Cache = { hisRank?: number }
 
 async function bili<T>(path: string): Promise<T> {
   const res = await fetch(`https://api.bilibili.com${path}`, { headers })
@@ -46,30 +47,25 @@ async function seriesArchives() {
   return data.archives
 }
 
-/** Video description and best-ever site rank; null when Bilibili refuses (kept from the cache). */
-async function videoDetails(bvid: string) {
+/** Best-ever site rank; undefined when Bilibili refuses (the cached value is kept). */
+async function hisRank(bvid: string) {
   try {
-    const v = await bili<{ desc: string; stat: { his_rank: number } }>(`/x/web-interface/view?bvid=${bvid}`)
-    return { skill: v.desc.match(/[Ss]kill\s*「([^」]+)」/)?.[1] ?? null, hisRank: v.stat.his_rank }
+    return (await bili<{ stat: { his_rank: number } }>(`/x/web-interface/view?bvid=${bvid}`)).stat.his_rank
   } catch (e) {
-    console.warn(`details for ${bvid} unavailable (${e}); using the cache`)
-    return null
+    console.warn(`rank for ${bvid} unavailable (${e}); using the cache`)
   }
 }
 
-/** skill name → its folder in nagi-studio/skills (skills/<category>/<name>), which moves between categories. */
-async function skillPaths() {
-  const res = await fetch('https://api.github.com/repos/nagi-studio/skills/git/trees/main?recursive=1', {
-    headers: process.env.GITHUB_TOKEN ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` } : {},
-  })
-  if (!res.ok) throw new Error(`skills tree: HTTP ${res.status}`)
-  const { tree } = (await res.json()) as { tree: { path: string; type: string }[] }
-  const paths = new Map<string, string>()
-  for (const { path, type } of tree) {
-    const m = path.match(/^skills\/[^/]+\/([^/]+)$/)
-    if (m && type === 'tree') paths.set(m[1]!, path)
+/** bvid → companion skill, read from the skills README lines like "- [`grill`](./skills/pondering/grill)：… [📺 视频](…/BV…)". */
+async function skillsByVideo() {
+  const res = await fetch('https://raw.githubusercontent.com/nagi-studio/skills/main/README.md')
+  if (!res.ok) throw new Error(`skills README: HTTP ${res.status}`)
+  const skills = new Map<string, { name: string; path: string }>()
+  for (const line of (await res.text()).split('\n')) {
+    const m = line.match(/^- \[`([^`]+)`\]\(\.\/(skills\/[^)]+)\).*bilibili\.com\/video\/(BV\w+)/)
+    if (m) skills.set(m[3]!, { name: m[1]!, path: m[2]! })
   }
-  return paths
+  return skills
 }
 
 /** 1151456 → "115 万", 48472 → "4.8 万". */
@@ -133,19 +129,12 @@ const featured = archives.find(a => a.bvid === FEATURED)
 if (!featured) throw new Error(`${FEATURED} is no longer in the series`)
 const newest = archives.filter(a => a.bvid !== FEATURED).sort((a, b) => b.pubdate - a.pubdate).slice(0, NEWEST)
 
-const cache: Cache = existsSync(CACHE) ? JSON.parse(readFileSync(CACHE, 'utf8')) : { skills: {} }
-for (const a of [featured, ...newest]) {
-  if (a.bvid !== FEATURED && a.bvid in cache.skills) continue // descriptions don't change; the rank might
-  const details = await videoDetails(a.bvid)
-  if (!details) continue
-  if (a.bvid === FEATURED) cache.hisRank = details.hisRank
-  else cache.skills[a.bvid] = details.skill
-}
-const paths = await skillPaths()
+const cache: Cache = existsSync(CACHE) ? JSON.parse(readFileSync(CACHE, 'utf8')) : {}
+cache.hisRank = (await hisRank(FEATURED)) ?? cache.hisRank
+const skills = await skillsByVideo()
 const skillLink = (bvid: string) => {
-  const name = cache.skills[bvid]
-  const path = name && paths.get(name)
-  return path ? ` · 配套 skill：<a href="https://github.com/nagi-studio/skills/tree/main/${path}">${name}</a>` : ''
+  const skill = skills.get(bvid)
+  return skill ? ` · 配套 skill：<a href="https://github.com/nagi-studio/skills/tree/main/${skill.path}">${skill.name}</a>` : ''
 }
 
 for (const a of newest) await saveCover(a)

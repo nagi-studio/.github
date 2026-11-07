@@ -30,30 +30,30 @@ Where [Carpe Diem](https://space.bilibili.com/312249633) builds open source for 
 <td valign="middle">
 <sub>入选 B 站「每周必看」第 395 期 · 2026.10.16</sub><br />
 <a href="https://www.bilibili.com/video/BV1VZWc6dECG"><b>【Re:从零开始的AI学习】第一季总集篇｜从入门到用好 AI</b></a><br />
-13 期、55 分钟，从零开始把 AI 用起来。119 万播放 · 全站排行最高第 14 名。<br />
-<sub>Season 1 recap of the series, featured in Bilibili's Weekly Must-Watch #395 — 13 episodes in 55 minutes, 1.19M+ views, peaked at #14 site-wide.</sub>
+13 期、55 分钟，从零开始把 AI 用起来。120 万播放 · 全站排行最高第 14 名。<br />
+<sub>Season 1 recap of the series, featured in Bilibili's Weekly Must-Watch #395 — 13 episodes in 55 minutes, 1.2M+ views, peaked at #14 site-wide.</sub>
 </td>
 </tr>
 </table>
 
-<sub>最新几期 · Latest episodes — <a href="https://space.bilibili.com/312249633/lists/8719249?type=season">全部 22 期</a></sub>
+<sub>最新几期 · Latest episodes — <a href="https://space.bilibili.com/312249633/lists/8719249?type=season">全部 23 期</a></sub>
 
 <table>
 <tr>
 <td width="33%" valign="top">
+<a href="https://www.bilibili.com/video/BV1Gu4L6iEdc"><img src="assets/videos/BV1Gu4L6iEdc.jpg" width="100%" alt="感觉模型降智了怎么办？" /></a><br />
+<a href="https://www.bilibili.com/video/BV1Gu4L6iEdc"><b>感觉模型降智了怎么办？</b></a><br />
+<sub>2026.11.07</sub>
+</td>
+<td width="33%" valign="top">
 <a href="https://www.bilibili.com/video/BV1pbxr6REJi"><img src="assets/videos/BV1pbxr6REJi.jpg" width="100%" alt="一眼 AI 味？把网页的 AI Slop 洗掉" /></a><br />
 <a href="https://www.bilibili.com/video/BV1pbxr6REJi"><b>一眼 AI 味？把网页的 AI Slop 洗掉</b></a><br />
-<sub>2026.10.31 · 配套 skill：<a href="https://github.com/nagi-studio/skills/tree/main/skills/rookie/de-slop">de-slop</a></sub>
+<sub>2026.10.31</sub>
 </td>
 <td width="33%" valign="top">
 <a href="https://www.bilibili.com/video/BV1BgH36DE7y"><img src="assets/videos/BV1BgH36DE7y.jpg" width="100%" alt="别再手动帮 AI 点测试了！" /></a><br />
 <a href="https://www.bilibili.com/video/BV1BgH36DE7y"><b>别再手动帮 AI 点测试了！</b></a><br />
-<sub>2026.10.25 · 配套 skill：<a href="https://github.com/nagi-studio/skills/tree/main/skills/rookie/prove-it">prove-it</a></sub>
-</td>
-<td width="33%" valign="top">
-<a href="https://www.bilibili.com/video/BV1JynA6aEug"><img src="assets/videos/BV1JynA6aEug.jpg" width="100%" alt="让 AI 可以回档的神器——Git" /></a><br />
-<a href="https://www.bilibili.com/video/BV1JynA6aEug"><b>让 AI 可以回档的神器——Git</b></a><br />
-<sub>2026.10.20</sub>
+<sub>2026.10.25</sub>
 </td>
 </tr>
 </table>

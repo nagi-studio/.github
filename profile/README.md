@@ -36,10 +36,15 @@ Where [Carpe Diem](https://space.bilibili.com/312249633) builds open source for 
 </tr>
 </table>
 
-<sub>最新几期 · Latest episodes — <a href="https://space.bilibili.com/312249633/lists/8719249?type=season">全部 23 期</a></sub>
+<sub>最新几期 · Latest episodes — <a href="https://space.bilibili.com/312249633/lists/8719249?type=season">全部 24 期</a></sub>
 
 <table>
 <tr>
+<td width="33%" valign="top">
+<a href="https://www.bilibili.com/video/BV18JWJ6eEgJ"><img src="assets/videos/BV18JWJ6eEgJ.jpg" width="100%" alt="大模型跑分的水有多深？" /></a><br />
+<a href="https://www.bilibili.com/video/BV18JWJ6eEgJ"><b>大模型跑分的水有多深？</b></a><br />
+<sub>2026.11.08</sub>
+</td>
 <td width="33%" valign="top">
 <a href="https://www.bilibili.com/video/BV1Gu4L6iEdc"><img src="assets/videos/BV1Gu4L6iEdc.jpg" width="100%" alt="感觉模型降智了怎么办？" /></a><br />
 <a href="https://www.bilibili.com/video/BV1Gu4L6iEdc"><b>感觉模型降智了怎么办？</b></a><br />
@@ -49,11 +54,6 @@ Where [Carpe Diem](https://space.bilibili.com/312249633) builds open source for 
 <a href="https://www.bilibili.com/video/BV1pbxr6REJi"><img src="assets/videos/BV1pbxr6REJi.jpg" width="100%" alt="一眼 AI 味？把网页的 AI Slop 洗掉" /></a><br />
 <a href="https://www.bilibili.com/video/BV1pbxr6REJi"><b>一眼 AI 味？把网页的 AI Slop 洗掉</b></a><br />
 <sub>2026.10.31</sub>
-</td>
-<td width="33%" valign="top">
-<a href="https://www.bilibili.com/video/BV1BgH36DE7y"><img src="assets/videos/BV1BgH36DE7y.jpg" width="100%" alt="别再手动帮 AI 点测试了！" /></a><br />
-<a href="https://www.bilibili.com/video/BV1BgH36DE7y"><b>别再手动帮 AI 点测试了！</b></a><br />
-<sub>2026.10.25</sub>
 </td>
 </tr>
 </table>

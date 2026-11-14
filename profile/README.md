@@ -30,8 +30,8 @@ Where [Carpe Diem](https://space.bilibili.com/312249633) builds open source for 
 <td valign="middle">
 <sub>入选 B 站「每周必看」第 395 期 · 2026.10.16</sub><br />
 <a href="https://www.bilibili.com/video/BV1VZWc6dECG"><b>【Re:从零开始的AI学习】第一季总集篇｜从入门到用好 AI</b></a><br />
-13 期、55 分钟，从零开始把 AI 用起来。124 万播放 · 全站排行最高第 14 名。<br />
-<sub>Season 1 recap of the series, featured in Bilibili's Weekly Must-Watch #395 — 13 episodes in 55 minutes, 1.24M+ views, peaked at #14 site-wide.</sub>
+13 期、55 分钟，从零开始把 AI 用起来。125 万播放 · 全站排行最高第 14 名。<br />
+<sub>Season 1 recap of the series, featured in Bilibili's Weekly Must-Watch #395 — 13 episodes in 55 minutes, 1.25M+ views, peaked at #14 site-wide.</sub>
 </td>
 </tr>
 </table>

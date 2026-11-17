@@ -30,16 +30,21 @@ Where [Carpe Diem](https://space.bilibili.com/312249633) builds open source for 
 <td valign="middle">
 <sub>入选 B 站「每周必看」第 395 期 · 2026.10.16</sub><br />
 <a href="https://www.bilibili.com/video/BV1VZWc6dECG"><b>【Re:从零开始的AI学习】第一季总集篇｜从入门到用好 AI</b></a><br />
-13 期、55 分钟，从零开始把 AI 用起来。126 万播放 · 全站排行最高第 14 名。<br />
-<sub>Season 1 recap of the series, featured in Bilibili's Weekly Must-Watch #395 — 13 episodes in 55 minutes, 1.26M+ views, peaked at #14 site-wide.</sub>
+13 期、55 分钟，从零开始把 AI 用起来。127 万播放 · 全站排行最高第 14 名。<br />
+<sub>Season 1 recap of the series, featured in Bilibili's Weekly Must-Watch #395 — 13 episodes in 55 minutes, 1.27M+ views, peaked at #14 site-wide.</sub>
 </td>
 </tr>
 </table>
 
-<sub>最新几期 · Latest episodes — <a href="https://space.bilibili.com/312249633/lists/8719249?type=season">全部 24 期</a></sub>
+<sub>最新几期 · Latest episodes — <a href="https://space.bilibili.com/312249633/lists/8719249?type=season">全部 25 期</a></sub>
 
 <table>
 <tr>
+<td width="33%" valign="top">
+<a href="https://www.bilibili.com/video/BV1DwsK6aE5R"><img src="assets/videos/BV1DwsK6aE5R.jpg" width="100%" alt="性价比最高的模型是谁？" /></a><br />
+<a href="https://www.bilibili.com/video/BV1DwsK6aE5R"><b>性价比最高的模型是谁？</b></a><br />
+<sub>2026.11.16</sub>
+</td>
 <td width="33%" valign="top">
 <a href="https://www.bilibili.com/video/BV18JWJ6eEgJ"><img src="assets/videos/BV18JWJ6eEgJ.jpg" width="100%" alt="大模型跑分的水有多深？" /></a><br />
 <a href="https://www.bilibili.com/video/BV18JWJ6eEgJ"><b>大模型跑分的水有多深？</b></a><br />
@@ -49,11 +54,6 @@ Where [Carpe Diem](https://space.bilibili.com/312249633) builds open source for 
 <a href="https://www.bilibili.com/video/BV1Gu4L6iEdc"><img src="assets/videos/BV1Gu4L6iEdc.jpg" width="100%" alt="感觉模型降智了怎么办？" /></a><br />
 <a href="https://www.bilibili.com/video/BV1Gu4L6iEdc"><b>感觉模型降智了怎么办？</b></a><br />
 <sub>2026.11.07</sub>
-</td>
-<td width="33%" valign="top">
-<a href="https://www.bilibili.com/video/BV1pbxr6REJi"><img src="assets/videos/BV1pbxr6REJi.jpg" width="100%" alt="一眼 AI 味？把网页的 AI Slop 洗掉" /></a><br />
-<a href="https://www.bilibili.com/video/BV1pbxr6REJi"><b>一眼 AI 味？把网页的 AI Slop 洗掉</b></a><br />
-<sub>2026.10.31</sub>
 </td>
 </tr>
 </table>

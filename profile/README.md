@@ -36,10 +36,15 @@ Where [Carpe Diem](https://space.bilibili.com/312249633) builds open source for 
 </tr>
 </table>
 
-<sub>最新几期 · Latest episodes — <a href="https://space.bilibili.com/312249633/lists/8719249?type=season">全部 27 期</a></sub>
+<sub>最新几期 · Latest episodes — <a href="https://space.bilibili.com/312249633/lists/8719249?type=season">全部 28 期</a></sub>
 
 <table>
 <tr>
+<td width="33%" valign="top">
+<a href="https://www.bilibili.com/video/BV1e4ytzeEfV"><img src="assets/videos/BV1e4ytzeEfV.jpg" width="100%" alt="不会编程也能用 AI 做点啥？" /></a><br />
+<a href="https://www.bilibili.com/video/BV1e4ytzeEfV"><b>不会编程也能用 AI 做点啥？</b></a><br />
+<sub>2026.11.21</sub>
+</td>
 <td width="33%" valign="top">
 <a href="https://www.bilibili.com/video/BV1ZBsv68EfD"><img src="assets/videos/BV1ZBsv68EfD.jpg" width="100%" alt="一个 Skill 帮你自动验收！" /></a><br />
 <a href="https://www.bilibili.com/video/BV1ZBsv68EfD"><b>一个 Skill 帮你自动验收！</b></a><br />
@@ -49,11 +54,6 @@ Where [Carpe Diem](https://space.bilibili.com/312249633) builds open source for 
 <a href="https://www.bilibili.com/video/BV1Qusy63Ew9"><img src="assets/videos/BV1Qusy63Ew9.jpg" width="100%" alt="AI 每次开新对话都失忆？给它写一份 AGENTS.md" /></a><br />
 <a href="https://www.bilibili.com/video/BV1Qusy63Ew9"><b>AI 每次开新对话都失忆？给它写一份 AGENTS.md</b></a><br />
 <sub>2026.11.18</sub>
-</td>
-<td width="33%" valign="top">
-<a href="https://www.bilibili.com/video/BV1DwsK6aE5R"><img src="assets/videos/BV1DwsK6aE5R.jpg" width="100%" alt="性价比最高的模型是谁？" /></a><br />
-<a href="https://www.bilibili.com/video/BV1DwsK6aE5R"><b>性价比最高的模型是谁？</b></a><br />
-<sub>2026.11.16</sub>
 </td>
 </tr>
 </table>

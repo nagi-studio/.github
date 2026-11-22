@@ -132,7 +132,7 @@ Gemini、AI Studio、Claude、ChatGPT 与 DeepSeek 的增强插件：时间轴�
 <tr>
 <td width="60" valign="middle" align="center"><a href="https://shiori.nagi.fun"><img src="assets/logos/shiori.png" width="42" alt="Shiori" /></a></td>
 <td valign="middle">
-<a href="https://shiori.nagi.fun"><b>Shiori 栞</b></a> &nbsp; <a href="https://github.com/Nagi-ovo/shiori-releases">repo</a> &nbsp; <a href="https://github.com/Nagi-ovo/shiori-releases"><img src="https://img.shields.io/github/stars/Nagi-ovo/shiori-releases?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
+<a href="https://shiori.nagi.fun"><b>Shiori 栞</b></a> &nbsp; <a href="https://github.com/Nagi-ovo/shiori">repo</a> &nbsp; <a href="https://github.com/Nagi-ovo/shiori"><img src="https://img.shields.io/github/stars/Nagi-ovo/shiori?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
 本地优先的 PDF 编辑器，也是 PDF / HTML / Markdown 的全平台阅读器（含手机）。<br />
 <sub>A local-first PDF editor — and a cross-platform reader for PDF, HTML &amp; Markdown (mobile too).</sub>
 </td>

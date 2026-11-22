@@ -8,7 +8,7 @@ on:
 permissions:
   contents: write
 
-concurrency: update-videos
+concurrency: update-profile
 
 jobs:
   update:

@@ -30,16 +30,21 @@ Where [Carpe Diem](https://space.bilibili.com/312249633) builds open source for 
 <td valign="middle">
 <sub>入选 B 站「每周必看」第 395 期 · 2026.10.16</sub><br />
 <a href="https://www.bilibili.com/video/BV1VZWc6dECG"><b>【Re:从零开始的AI学习】第一季总集篇｜从入门到用好 AI</b></a><br />
-13 期、55 分钟，从零开始把 AI 用起来。129 万播放 · 全站排行最高第 14 名。<br />
-<sub>Season 1 recap of the series, featured in Bilibili's Weekly Must-Watch #395 — 13 episodes in 55 minutes, 1.29M+ views, peaked at #14 site-wide.</sub>
+13 期、55 分钟，从零开始把 AI 用起来。130 万播放 · 全站排行最高第 14 名。<br />
+<sub>Season 1 recap of the series, featured in Bilibili's Weekly Must-Watch #395 — 13 episodes in 55 minutes, 1.3M+ views, peaked at #14 site-wide.</sub>
 </td>
 </tr>
 </table>
 
-<sub>最新几期 · Latest episodes — <a href="https://space.bilibili.com/312249633/lists/8719249?type=season">全部 28 期</a></sub>
+<sub>最新几期 · Latest episodes — <a href="https://space.bilibili.com/312249633/lists/8719249?type=season">全部 29 期</a></sub>
 
 <table>
 <tr>
+<td width="33%" valign="top">
+<a href="https://www.bilibili.com/video/BV1VbytzAE2D"><img src="assets/videos/BV1VbytzAE2D.jpg" width="100%" alt="别乱装 DSH 插件！" /></a><br />
+<a href="https://www.bilibili.com/video/BV1VbytzAE2D"><b>别乱装 DSH 插件！</b></a><br />
+<sub>2026.11.22</sub>
+</td>
 <td width="33%" valign="top">
 <a href="https://www.bilibili.com/video/BV1e4ytzeEfV"><img src="assets/videos/BV1e4ytzeEfV.jpg" width="100%" alt="不会编程也能用 AI 做点啥？" /></a><br />
 <a href="https://www.bilibili.com/video/BV1e4ytzeEfV"><b>不会编程也能用 AI 做点啥？</b></a><br />
@@ -49,11 +54,6 @@ Where [Carpe Diem](https://space.bilibili.com/312249633) builds open source for 
 <a href="https://www.bilibili.com/video/BV1ZBsv68EfD"><img src="assets/videos/BV1ZBsv68EfD.jpg" width="100%" alt="一个 Skill 帮你自动验收！" /></a><br />
 <a href="https://www.bilibili.com/video/BV1ZBsv68EfD"><b>一个 Skill 帮你自动验收！</b></a><br />
 <sub>2026.11.20</sub>
-</td>
-<td width="33%" valign="top">
-<a href="https://www.bilibili.com/video/BV1Qusy63Ew9"><img src="assets/videos/BV1Qusy63Ew9.jpg" width="100%" alt="AI 每次开新对话都失忆？给它写一份 AGENTS.md" /></a><br />
-<a href="https://www.bilibili.com/video/BV1Qusy63Ew9"><b>AI 每次开新对话都失忆？给它写一份 AGENTS.md</b></a><br />
-<sub>2026.11.18</sub>
 </td>
 </tr>
 </table>

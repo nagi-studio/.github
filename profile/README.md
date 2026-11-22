@@ -97,13 +97,13 @@ Where [Carpe Diem](https://space.bilibili.com/312249633) builds open source for 
 <table>
 <tr>
 <td width="60" valign="middle" align="center">
-<a href="https://github.com/nagi-studio/YesPlayMusic"><img src="assets/logos/yesplaymusic.png" width="42" alt="YesPlayMusic" /></a><br />
+<a href="https://github.com/nagi-studio/Yokaze"><img src="assets/logos/yokaze.png" width="42" alt="Yokaze" /></a><br />
 <a href="https://tauri.app"><img src="assets/logos/tauri-glyph.svg" width="18" alt="Tauri 2" /></a>
 </td>
 <td valign="middle">
-<a href="https://github.com/nagi-studio/YesPlayMusic"><b>YesPlayMusic</b></a> &nbsp;<sub>Tauri 2</sub>&nbsp; <a href="https://github.com/nagi-studio/YesPlayMusic"><img src="https://img.shields.io/github/stars/nagi-studio/YesPlayMusic?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
-基于 <a href="https://github.com/qier222/YesPlayMusic">qier222/YesPlayMusic</a> 的 Tauri 2 重构版。界面和主要功能来自原作，这边重做了桌面运行时，并加入迷你播放器和菜单栏歌词。<br />
-<sub>A Tauri 2 rebuild based on <a href="https://github.com/qier222/YesPlayMusic">qier222/YesPlayMusic</a>. The interface and core features come from the original project; this fork rebuilds the desktop runtime and adds a mini player and menu bar lyrics.</sub>
+<a href="https://github.com/nagi-studio/Yokaze"><b>Yokaze 夜風</b></a> &nbsp;<sub>Tauri 2 · TUI</sub>&nbsp; <a href="https://github.com/nagi-studio/Yokaze"><img src="https://img.shields.io/github/stars/nagi-studio/Yokaze?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
+好看的网易云音乐播放器，从 <a href="https://github.com/qier222/YesPlayMusic">qier222/YesPlayMusic</a> 分出来独立维护。桌面上有迷你播放条和菜单栏歌词，终端里有 <code>ypm</code>：封面、双语歌词和频谱都画在终端里。<br />
+<sub>A good-looking NetEase Cloud Music player, forked from <a href="https://github.com/qier222/YesPlayMusic">qier222/YesPlayMusic</a> and maintained on its own. A mini player and menu bar lyrics on the desktop, and <code>ypm</code> in the terminal with cover art, bilingual lyrics and a spectrum.</sub>
 </td>
 </tr>
 <tr>

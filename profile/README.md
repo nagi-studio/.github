@@ -98,9 +98,9 @@ Where [Carpe Diem](https://space.bilibili.com/312249633) builds open source for 
 <tr>
 <td width="60" valign="middle" align="center"><a href="https://github.com/nagi-studio/Yokaze"><img src="assets/logos/yokaze.png" width="42" alt="Yokaze" /></a></td>
 <td valign="middle">
-<a href="https://github.com/nagi-studio/Yokaze"><b>Yokaze 夜風</b></a> &nbsp;<sub>Tauri 2 · TUI</sub>&nbsp; <a href="https://github.com/nagi-studio/Yokaze"><img src="https://img.shields.io/github/stars/nagi-studio/Yokaze?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
-好看的网易云音乐播放器，从 <a href="https://github.com/qier222/YesPlayMusic">qier222/YesPlayMusic</a> 分出来独立维护。桌面上有迷你播放条和菜单栏歌词，终端里有 <code>ypm</code>：封面、双语歌词和频谱都画在终端里。<br />
-<sub>A good-looking NetEase Cloud Music player, forked from <a href="https://github.com/qier222/YesPlayMusic">qier222/YesPlayMusic</a> and maintained on its own. A mini player and menu bar lyrics on the desktop, and <code>ypm</code> in the terminal with cover art, bilingual lyrics and a spectrum.</sub>
+<a href="https://github.com/nagi-studio/Yokaze"><b>Yokaze 夜風</b></a> &nbsp;<sub>桌面端 · TUI</sub>&nbsp; <a href="https://github.com/nagi-studio/Yokaze"><img src="https://img.shields.io/github/stars/nagi-studio/Yokaze?style=flat-square&color=c8f031&labelColor=0a0a0e&logo=github" alt="stars" valign="middle" /></a><br />
+好看的网易云音乐播放器，有桌面端和 TUI 两种用法：桌面端（macOS / Windows / Linux）带迷你播放条和菜单栏歌词；TUI <code>ypm</code> 在终端里画封面、双语歌词和频谱。从 <a href="https://github.com/qier222/YesPlayMusic">qier222/YesPlayMusic</a> 分出来独立维护。<br />
+<sub>A good-looking NetEase Cloud Music player, as a desktop app and a TUI: the desktop app (macOS, Windows, Linux) has a mini player and menu bar lyrics; the <code>ypm</code> TUI draws cover art, bilingual lyrics and a spectrum in the terminal. Forked from <a href="https://github.com/qier222/YesPlayMusic">qier222/YesPlayMusic</a> and maintained on its own.</sub>
 </td>
 </tr>
 <tr>

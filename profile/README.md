@@ -30,16 +30,21 @@ Where [Carpe Diem](https://space.bilibili.com/312249633) builds open source for 
 <td valign="middle">
 <sub>入选 B 站「每周必看」第 395 期 · 2026.10.16</sub><br />
 <a href="https://www.bilibili.com/video/BV1VZWc6dECG"><b>【Re:从零开始的AI学习】第一季总集篇｜从入门到用好 AI</b></a><br />
-13 期、55 分钟，从零开始把 AI 用起来。132 万播放 · 全站排行最高第 14 名。<br />
-<sub>Season 1 recap of the series, featured in Bilibili's Weekly Must-Watch #395 — 13 episodes in 55 minutes, 1.32M+ views, peaked at #14 site-wide.</sub>
+13 期、55 分钟，从零开始把 AI 用起来。133 万播放 · 全站排行最高第 14 名。<br />
+<sub>Season 1 recap of the series, featured in Bilibili's Weekly Must-Watch #395 — 13 episodes in 55 minutes, 1.33M+ views, peaked at #14 site-wide.</sub>
 </td>
 </tr>
 </table>
 
-<sub>最新几期 · Latest episodes — <a href="https://space.bilibili.com/312249633/lists/8719249?type=season">全部 30 期</a></sub>
+<sub>最新几期 · Latest episodes — <a href="https://space.bilibili.com/312249633/lists/8719249?type=season">全部 31 期</a></sub>
 
 <table>
 <tr>
+<td width="33%" valign="top">
+<a href="https://www.bilibili.com/video/BV1VRykzrEZn"><img src="assets/videos/BV1VRykzrEZn.jpg" width="100%" alt="第二季总集篇｜从零做出你的第一个项目" /></a><br />
+<a href="https://www.bilibili.com/video/BV1VRykzrEZn"><b>第二季总集篇｜从零做出你的第一个项目</b></a><br />
+<sub>2026.11.25</sub>
+</td>
 <td width="33%" valign="top">
 <a href="https://www.bilibili.com/video/BV1pQytz7E1r"><img src="assets/videos/BV1pQytz7E1r.jpg" width="100%" alt="第二季完结：你的开源魔法上线了！" /></a><br />
 <a href="https://www.bilibili.com/video/BV1pQytz7E1r"><b>第二季完结：你的开源魔法上线了！</b></a><br />
@@ -49,11 +54,6 @@ Where [Carpe Diem](https://space.bilibili.com/312249633) builds open source for 
 <a href="https://www.bilibili.com/video/BV1VbytzAE2D"><img src="assets/videos/BV1VbytzAE2D.jpg" width="100%" alt="别乱装 DSH 插件！" /></a><br />
 <a href="https://www.bilibili.com/video/BV1VbytzAE2D"><b>别乱装 DSH 插件！</b></a><br />
 <sub>2026.11.22</sub>
-</td>
-<td width="33%" valign="top">
-<a href="https://www.bilibili.com/video/BV1e4ytzeEfV"><img src="assets/videos/BV1e4ytzeEfV.jpg" width="100%" alt="不会编程也能用 AI 做点啥？" /></a><br />
-<a href="https://www.bilibili.com/video/BV1e4ytzeEfV"><b>不会编程也能用 AI 做点啥？</b></a><br />
-<sub>2026.11.21</sub>
 </td>
 </tr>
 </table>
